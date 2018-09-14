@@ -3,28 +3,25 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Leetcode 解题报告 | AClocker</title>
+  <title>[leetcode 791] Custom Sort String | AClocker</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="google-site-verification" content="0QPeBLXarxu7hMOPoqh_Rhml9dXakp7JPbJoL-2RS6k" />
   <meta name="baidu-site-verification" content="01UqJkCh7B" />
   
     <meta name="keywords" content="AClocker,AClocker's Blog" />
   
-  <meta name="description" content="状态 题号 解题报告 分类 难度      809 Expressive Words Algorithm medium    791 Custom Sort String Algorithm medium">
-<meta name="keywords" content="leetcode">
+  <meta name="description" content="S and T are strings composed of lowercase letters. In S, no letter occurs more than once.S was sorted in some custom order previously. We want to permute the characters of T so that they match the ord">
+<meta name="keywords" content="leetcode,Medium">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Leetcode 解题报告">
-<meta property="og:url" content="http://aclocker.com/2018/09/13/Leetcode-解题报告/index.html">
+<meta property="og:title" content="[leetcode 791] Custom Sort String">
+<meta property="og:url" content="http://aclocker.com/2018/09/13/leetcode/leetcode-791-Custom-Sort-String/index.html">
 <meta property="og:site_name" content="AClocker">
-<meta property="og:description" content="状态 题号 解题报告 分类 难度      809 Expressive Words Algorithm medium    791 Custom Sort String Algorithm medium">
+<meta property="og:description" content="S and T are strings composed of lowercase letters. In S, no letter occurs more than once.S was sorted in some custom order previously. We want to permute the characters of T so that they match the ord">
 <meta property="og:locale" content="CN">
-<meta property="og:image" content="http://aclocker.com/images/success.png">
-<meta property="og:image" content="http://aclocker.com/images/success.png">
-<meta property="og:updated_time" content="2018-09-14T06:19:23.594Z">
+<meta property="og:updated_time" content="2018-09-14T06:19:08.809Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leetcode 解题报告">
-<meta name="twitter:description" content="状态 题号 解题报告 分类 难度      809 Expressive Words Algorithm medium    791 Custom Sort String Algorithm medium">
-<meta name="twitter:image" content="http://aclocker.com/images/success.png">
+<meta name="twitter:title" content="[leetcode 791] Custom Sort String">
+<meta name="twitter:description" content="S and T are strings composed of lowercase letters. In S, no letter occurs more than once.S was sorted in some custom order previously. We want to permute the characters of T so that they match the ord">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -119,14 +116,14 @@
     </div>
 </header>
       <div class="outer">
-        <section id="main" class="body-wrap"><article id="post-Leetcode-解题报告" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main" class="body-wrap"><article id="post-leetcode/leetcode-791-Custom-Sort-String" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="post-title" itemprop="name">
-      Leetcode 解题报告
+      [leetcode 791] Custom Sort String
     </h1>
     <div class="post-title-bar">
       <ul>
@@ -134,7 +131,7 @@
               <li>
                   <i class="fa fa-book"></i>
                   
-                      <a href="/categories/置顶/">置顶</a>
+                      <a href="/categories/programing/">programing</a>
                   
               </li>
           
@@ -155,38 +152,16 @@
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <table>
-<thead>
-<tr>
-<th style="text-align:left">状态</th>
-<th style="text-align:left">题号</th>
-<th style="text-align:center">解题报告</th>
-<th style="text-align:center">分类</th>
-<th style="text-align:center">难度</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><img src="/images/success.png" alt="success"></td>
-<td style="text-align:left">809</td>
-<td style="text-align:center"><a href="http://www.aclocker.com/2018/09/11/leetcode/809-Expressive-Words/#more" target="_blank" rel="noopener">Expressive Words</a></td>
-<td style="text-align:center">Algorithm</td>
-<td style="text-align:center">medium</td>
-</tr>
-<tr>
-<td style="text-align:left"><img src="/images/success.png" alt="success"></td>
-<td style="text-align:left">791</td>
-<td style="text-align:center"><a href="http://www.aclocker.com/2018/09/13/leetcode-791-Custom-Sort-String/" target="_blank" rel="noopener">Custom Sort String</a></td>
-<td style="text-align:center">Algorithm</td>
-<td style="text-align:center">medium</td>
-</tr>
-</tbody>
-</table>
+            <p>S and T are strings composed of lowercase letters. In S, no letter occurs more than once.<br>S was sorted in some custom order previously. We want to permute the characters of T so that they match the order that S was sorted. More specifically, if x occurs before y in S, then x should occur before y in the returned string.<br>Return any permutation of T (as a string) that satisfies this property.<br>Example :<br><strong>Input</strong>:<br>S = “cba”<br>T = “abcd”<br><strong>Output</strong>: “cbad”<br><strong>Explanation</strong>:<br>“a”, “b”, “c” appear in S, so the order of “a”, “b”, “c” should be “c”, “b”, and “a”.<br>Since “d” does not appear in S, it can be at any position in T. “dcba”, “cdba”, “cbda” are also valid outputs.</p>
+<p>Note:<br>S has length at most 26, and no character is repeated in S.<br>T has length at most 200.<br>S and T consist of lowercase letters only.  </p>
+<p><font color="red"><strong>题目大意</strong></font><br>给定字符串S和T，S中的字母互不重复。将T中的字母调整顺序，使其字母之间的先后关系与S中的字母保持一致。对于S中没有出现的字符，顺序任意。  </p>
+<p><font color="red"><strong>解题思路：</strong></font><br>统计T中各字符出现的次数<br>按照S的顺序将T中字符进行重排，将剩余字符排在末尾。<br>解题思路：<br>统计T中各字符出现的次数<br>按照S的顺序将T中字符进行重排，将剩余字符排在末尾。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">customSortString</span><span class="params">(String S, String T)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] count = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">26</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">char</span> c : T.toCharArray()) &#123; ++count[c - <span class="string">'a'</span>]; &#125;  <span class="comment">// count each char in T.</span></span><br><span class="line">        StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">char</span> c : S.toCharArray()) &#123;</span><br><span class="line">            <span class="keyword">while</span> (count[c - <span class="string">'a'</span>]-- &gt; <span class="number">0</span>) &#123; sb.append(c); &#125;    <span class="comment">// sort chars both in T and S by the order of S.</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">char</span> c = <span class="string">'a'</span>; c &lt;= <span class="string">'z'</span>; ++c) &#123;</span><br><span class="line">            <span class="keyword">while</span> (count[c - <span class="string">'a'</span>]-- &gt; <span class="number">0</span>) &#123; sb.append(c); &#125;   <span class="comment">// group chars in T but not in S.</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sb.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
             <div class="post-copyright">
     <div class="content">
         <p>最后更新： 2018年09月13日 23:19</p>
-        <p>原始链接： <a class="post-url" href="/2018/09/13/Leetcode-解题报告/" title="Leetcode 解题报告">http://aclocker.com/2018/09/13/Leetcode-解题报告/</a></p>
+        <p>原始链接： <a class="post-url" href="/2018/09/13/leetcode/leetcode-791-Custom-Sort-String/" title="[leetcode 791] Custom Sort String">http://aclocker.com/2018/09/13/leetcode/leetcode-791-Custom-Sort-String/</a></p>
         <footer>
             <a href="http://aclocker.com">
                 <img src="/images/logo.png" alt="Tiefanhe">
@@ -243,7 +218,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://aclocker.com/2018/09/13/Leetcode-解题报告/&title=《Leetcode 解题报告》 — AClocker&pic=/images/leetcode.png" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://aclocker.com/2018/09/13/leetcode/leetcode-791-Custom-Sort-String/&title=《[leetcode 791] Custom Sort String》 — AClocker&pic=/images/leetcode.png" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -253,22 +228,22 @@
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://aclocker.com/2018/09/13/Leetcode-解题报告/&title=《Leetcode 解题报告》 — AClocker&source=A tech blog" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://aclocker.com/2018/09/13/leetcode/leetcode-791-Custom-Sort-String/&title=《[leetcode 791] Custom Sort String》 — AClocker&source=A tech blog" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
           <li>
-            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://aclocker.com/2018/09/13/Leetcode-解题报告/" data-title="Facebook">
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://aclocker.com/2018/09/13/leetcode/leetcode-791-Custom-Sort-String/" data-title="Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Leetcode 解题报告》 — AClocker&url=http://aclocker.com/2018/09/13/Leetcode-解题报告/&via=http://aclocker.com" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《[leetcode 791] Custom Sort String》 — AClocker&url=http://aclocker.com/2018/09/13/leetcode/leetcode-791-Custom-Sort-String/&via=http://aclocker.com" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://aclocker.com/2018/09/13/Leetcode-解题报告/" data-title="Google+">
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://aclocker.com/2018/09/13/leetcode/leetcode-791-Custom-Sort-String/" data-title="Google+">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -278,7 +253,7 @@
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://aclocker.com/2018/09/13/Leetcode-解题报告/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://aclocker.com/2018/09/13/leetcode/leetcode-791-Custom-Sort-String/" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -292,6 +267,8 @@
       
     <a href="/tags/leetcode/" class="color4">leetcode</a>
       
+    <a href="/tags/Medium/" class="color2">Medium</a>
+      
   </li>
 
         </ul>
@@ -304,19 +281,19 @@
 
 <nav id="article-nav">
   
-    <a href="/2018/09/13/leetcode/leetcode-791-Custom-Sort-String/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/09/13/790-Domino-and-Tromino-Tiling/" id="article-nav-newer" class="article-nav-link-wrap">
 
       <span class="article-nav-title">
         <i class="fa fa-hand-o-left" aria-hidden="true"></i>
         
-          [leetcode 791] Custom Sort String
+          [790] Domino and Tromino Tiling
         
       </span>
     </a>
   
   
-    <a href="/2018/09/11/leetcode/809-Expressive-Words/" id="article-nav-older" class="article-nav-link-wrap">
-      <span class="article-nav-title">[leetcode 809] Expressive Words</span>
+    <a href="/2018/09/13/Leetcode-解题报告/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">Leetcode 解题报告</span>
       <i class="fa fa-hand-o-right" aria-hidden="true"></i>
     </a>
   
