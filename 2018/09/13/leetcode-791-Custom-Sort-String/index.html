@@ -3,24 +3,25 @@
 <head>
   <meta charset="utf-8">
   
-  <title>AClocker</title>
+  <title>[leetcode 791] Custom Sort String | AClocker</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="google-site-verification" content="0QPeBLXarxu7hMOPoqh_Rhml9dXakp7JPbJoL-2RS6k" />
   <meta name="baidu-site-verification" content="01UqJkCh7B" />
   
     <meta name="keywords" content="AClocker,AClocker's Blog" />
   
-  <meta name="description" content="title: ‘[leetcode 791] Custom Sort String’date: 2018-09-13 23:01:39categories:  programingtags: leetcode Medium   S and T are strings composed of lowercase letters. In S, no letter occurs more than o">
+  <meta name="description" content="S and T are strings composed of lowercase letters. In S, no letter occurs more than once.S was sorted in some custom order previously. We want to permute the characters of T so that they match the ord">
+<meta name="keywords" content="leetcode,Medium">
 <meta property="og:type" content="article">
-<meta property="og:title" content="AClocker">
+<meta property="og:title" content="[leetcode 791] Custom Sort String">
 <meta property="og:url" content="http://aclocker.com/2018/09/13/leetcode-791-Custom-Sort-String/index.html">
 <meta property="og:site_name" content="AClocker">
-<meta property="og:description" content="title: ‘[leetcode 791] Custom Sort String’date: 2018-09-13 23:01:39categories:  programingtags: leetcode Medium   S and T are strings composed of lowercase letters. In S, no letter occurs more than o">
+<meta property="og:description" content="S and T are strings composed of lowercase letters. In S, no letter occurs more than once.S was sorted in some custom order previously. We want to permute the characters of T so that they match the ord">
 <meta property="og:locale" content="CN">
-<meta property="og:updated_time" content="2018-09-14T06:05:28.088Z">
+<meta property="og:updated_time" content="2018-09-14T06:08:31.819Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="AClocker">
-<meta name="twitter:description" content="title: ‘[leetcode 791] Custom Sort String’date: 2018-09-13 23:01:39categories:  programingtags: leetcode Medium   S and T are strings composed of lowercase letters. In S, no letter occurs more than o">
+<meta name="twitter:title" content="[leetcode 791] Custom Sort String">
+<meta name="twitter:description" content="S and T are strings composed of lowercase letters. In S, no letter occurs more than once.S was sorted in some custom order previously. We want to permute the characters of T so that they match the ord">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -118,18 +119,40 @@
         <section id="main" class="body-wrap"><article id="post-leetcode-791-Custom-Sort-String" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      [leetcode 791] Custom Sort String
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/programing/">programing</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2018-09-13
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <hr>
-<p>title: ‘[leetcode 791] Custom Sort String’<br>date: 2018-09-13 23:01:39<br>categories:</p>
-<ul>
-<li>programing<br>tags:</li>
-<li>leetcode</li>
-<li>Medium</li>
-</ul>
-<hr>
-<p>S and T are strings composed of lowercase letters. In S, no letter occurs more than once.<br>S was sorted in some custom order previously. We want to permute the characters of T so that they match the order that S was sorted. More specifically, if x occurs before y in S, then x should occur before y in the returned string.<br>Return any permutation of T (as a string) that satisfies this property.<br>Example :<br><strong>Input</strong>:<br>S = “cba”<br>T = “abcd”<br><strong>Output</strong>: “cbad”<br><strong>Explanation</strong>:<br>“a”, “b”, “c” appear in S, so the order of “a”, “b”, “c” should be “c”, “b”, and “a”.<br>Since “d” does not appear in S, it can be at any position in T. “dcba”, “cdba”, “cbda” are also valid outputs.</p>
+            <p>S and T are strings composed of lowercase letters. In S, no letter occurs more than once.<br>S was sorted in some custom order previously. We want to permute the characters of T so that they match the order that S was sorted. More specifically, if x occurs before y in S, then x should occur before y in the returned string.<br>Return any permutation of T (as a string) that satisfies this property.<br>Example :<br><strong>Input</strong>:<br>S = “cba”<br>T = “abcd”<br><strong>Output</strong>: “cbad”<br><strong>Explanation</strong>:<br>“a”, “b”, “c” appear in S, so the order of “a”, “b”, “c” should be “c”, “b”, and “a”.<br>Since “d” does not appear in S, it can be at any position in T. “dcba”, “cdba”, “cbda” are also valid outputs.</p>
 <p>Note:<br>S has length at most 26, and no character is repeated in S.<br>T has length at most 200.<br>S and T consist of lowercase letters only.  </p>
 <p><font color="red"><strong>题目大意</strong></font><br>给定字符串S和T，S中的字母互不重复。将T中的字母调整顺序，使其字母之间的先后关系与S中的字母保持一致。对于S中没有出现的字符，顺序任意。  </p>
 <p><font color="red"><strong>解题思路：</strong></font><br>统计T中各字符出现的次数<br>按照S的顺序将T中字符进行重排，将剩余字符排在末尾。<br>解题思路：<br>统计T中各字符出现的次数<br>按照S的顺序将T中字符进行重排，将剩余字符排在末尾。</p>
@@ -137,8 +160,8 @@
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年09月13日 23:05</p>
-        <p>原始链接： <a class="post-url" href="/2018/09/13/leetcode-791-Custom-Sort-String/" title="">http://aclocker.com/2018/09/13/leetcode-791-Custom-Sort-String/</a></p>
+        <p>最后更新： 2018年09月13日 23:08</p>
+        <p>原始链接： <a class="post-url" href="/2018/09/13/leetcode-791-Custom-Sort-String/" title="[leetcode 791] Custom Sort String">http://aclocker.com/2018/09/13/leetcode-791-Custom-Sort-String/</a></p>
         <footer>
             <a href="http://aclocker.com">
                 <img src="/images/logo.png" alt="Tiefanhe">
@@ -195,7 +218,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://aclocker.com/2018/09/13/leetcode-791-Custom-Sort-String/&title=AClocker&pic=http://aclocker.comimages/logo.png" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://aclocker.com/2018/09/13/leetcode-791-Custom-Sort-String/&title=《[leetcode 791] Custom Sort String》 — AClocker&pic=/images/leetcode.png" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -205,7 +228,7 @@
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://aclocker.com/2018/09/13/leetcode-791-Custom-Sort-String/&title=AClocker&source=A tech blog" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://aclocker.com/2018/09/13/leetcode-791-Custom-Sort-String/&title=《[leetcode 791] Custom Sort String》 — AClocker&source=A tech blog" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
@@ -215,7 +238,7 @@
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=AClocker&url=http://aclocker.com/2018/09/13/leetcode-791-Custom-Sort-String/&via=http://aclocker.com" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《[leetcode 791] Custom Sort String》 — AClocker&url=http://aclocker.com/2018/09/13/leetcode-791-Custom-Sort-String/&via=http://aclocker.com" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -239,6 +262,15 @@
         <ul class="article-footer-menu">
             
             
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/leetcode/" class="color4">leetcode</a>
+      
+    <a href="/tags/Medium/" class="color2">Medium</a>
+      
+  </li>
+
         </ul>
         
     </footer>
